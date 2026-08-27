@@ -22,6 +22,7 @@ app.on("ready", () => {
     webPreferences: {
       preload: getPreloadPath(),
     },
+    height: 400,
     fullscreenable: true,
     frame: false,
     icon: path.join(getAssetsPath(), "icon.png"),

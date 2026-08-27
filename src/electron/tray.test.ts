@@ -24,12 +24,6 @@ vi.mock("electron", () => {
   };
 });
 
-vi.mock("./pathResolver.js", () => {
-  return {
-    getAssetsPath: vi.fn().mockReturnValue("/"),
-  };
-});
-
 const mainWindow = {
   show: vi.fn(),
 } satisfies Partial<BrowserWindow> as any as BrowserWindow;
